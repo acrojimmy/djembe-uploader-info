@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Djembe APK Uploader is a personal tool for transferring Android test builds from a local build runner to the owner's Google Drive.">
+<title>Djembe APK Uploader</title>
+<style>body{margin:0;background:#f5f7fa;color:#17212f;font:18px/1.65 system-ui,sans-serif}
+main{max-width:760px;margin:48px auto;padding:36px;background:white;border-radius:12px}
+h1,h2{line-height:1.25}h1{font-size:2rem}h2{font-size:1.2rem;margin-top:32px}
+a{color:#1758a8}footer{margin-top:40px;border-top:1px solid #ddd;padding-top:16px;font-size:.9rem}
+@media(max-width:820px){main{margin:16px;padding:24px}}</style>
+</head>
+<body>
+<main>
+<h1>Djembe APK Uploader</h1>
+<p>A personal build-delivery tool maintained by <a href="https://github.com/acrojimmy">acrojimmy</a>.</p>
+<h2>What it does</h2>
+<p>The uploader transfers a signed Djembe Android APK from a local GitHub Actions runner to the owner's Google Drive. This lets the owner download and test the app on an Android phone.</p>
+<p>Each successful upload replaces the latest APK in a private Drive folder. The local build archive retains historical builds for 30 days, with cleanup after successful saves.</p>
+<h2>Google Drive access</h2>
+<p>The owner signs in to Google and authorizes the uploader. It requests the limited <code>drive.file</code> permission to create and manage its own upload files. The uploader does not request access to Gmail or contacts.</p>
+<p>Uploaded files are private unless the owner changes their sharing settings. APKs and Google authorization credentials are not published on this website.</p>
+<h2>Privacy and contact</h2>
+<p>Read the <a href="privacy.html">Djembe APK Uploader privacy policy</a> for details about data use, retention, and revoking access.</p>
+<p>For general questions, <a href="https://github.com/acrojimmy/djembe-uploader-info/issues">open an issue in the information repository</a>. Issues are public; do not include passwords, tokens, or personal information.</p>
+<footer>This website provides information about the uploader. It does not offer Google sign-in or host APK downloads.</footer>
+</main>
+</body>
+</html>
